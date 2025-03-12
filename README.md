@@ -24,3 +24,6 @@ Things I wish I knew/had starting my PhD that would have made life easier.
 
 [Susan Johnson, MD](https://thrivingamidstchaos.com/)
 - Susan gave a seminar in the first year of my PhD, giving rise to most of these websites and books that have helped me over the years. I am so grateful to her for her mentorship and guidance.
+
+[Writing in the Health Sciences: a comprehensive guide by the University of Toronto](https://journals.scholarsportal.info/browse/19207093/v01i0001)  
+- A guide in writing that is useful way beyong the health sciences 
