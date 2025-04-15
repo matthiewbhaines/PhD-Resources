@@ -1,0 +1,30 @@
+*Insert Text/Graphic Question*  
+
+*Paste text in HTML view*  
+<p>Please take a short 30-second break. The page will automatically forward after the timer finishes.</p>
+<p>Time remaining: <span id="countdown">30</span> seconds.</p>
+
+*Insert JavaScript Code*
+Qualtrics.SurveyEngine.addOnload(function() {
+  // Wait for the DOM to finish loading the question text
+  var checkExist = setInterval(function() {
+    var countdownElement = document.getElementById("countdown");
+
+    if (countdownElement) {
+      clearInterval(checkExist);
+
+      var seconds = 30;
+      countdownElement.innerHTML = seconds;
+
+      var countdown = setInterval(function() {
+        seconds--;
+        countdownElement.innerHTML = seconds;
+
+        if (seconds <= 0) {
+          clearInterval(countdown);
+          // this.clickNextButton(); // Uncomment to auto-advance
+        }
+      }, 1000);
+    }
+  }, 100); // Check every 100ms until element is available
+});
